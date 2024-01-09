@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        header {
+            background-color: #04ff00;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .student-entry {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .student-entry:hover {
+            transform: scale(1.05);
+        }
+
+        .student-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0dff00;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>360 STUDENTS </title>
+</head>
+<body>
+    <header>
+        <h1>Welcome 360 Digrii </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="students.html">Students</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+    <section>
+        <h2>PLACED STUDENTS</h2>
+
+        <div class="students-grid">
+            <div class="student-entry">
+                <img class="student-image" src="https://i.pinimg.com/736x/cd/bd/fc/cdbdfc4dbd32e0996be40e5b9954f4e8--photo-maker-id-photo.jpg" alt="Student 1">
+                <p>SAI KRISHNA</p>
+                <p>GOOGLE</p>
+            </div>
+
+            <div class="student-entry">
+                <img class="student-image" src="https://i.pinimg.com/736x/93/f4/0e/93f40ec756290812571be534e12bcfe7.jpg" alt="Student 2">
+                <p>MANIKANTA</p>
+                <p>WIPRO</p>
+            </div>
+
+            <div class="student-entry">
+                <img class="student-image" src="http://www.clker.com/cliparts/a/e/c/c/1364125264782739178passport.jpg" alt="Student 3">
+                <p>ABHINAV</p>
+                <p>AMAZON</p>
+            </div>
+
+            <div class="student-entry">
+                <img class="student-image" src="https://i.pinimg.com/736x/cd/bd/fc/cdbdfc4dbd32e0996be40e5b9954f4e8--photo-maker-id-photo.jpg" alt="Student 4">
+                <p>NITHIN</p>
+                <p>CISCO</p>
+            </div>
+
+            <div class="student-entry">
+                <img class="student-image" src="https://i.pinimg.com/736x/93/f4/0e/93f40ec756290812571be534e12bcfe7.jpg" alt="Student 5">
+                <p>SAHITH</p>
+                <p>IBM</p>
+            </div>
+
+            <div class="student-entry">
+                <img class="student-image" src="http://www.clker.com/cliparts/a/e/c/c/1364125264782739178passport.jpg" alt="Student 6">
+                <p>SAI SHIVA</p>
+                <p>FACEBOOK</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 360 Digrii</p>
+    </footer>
+</body>
+</html>
